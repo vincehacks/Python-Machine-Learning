@@ -22,6 +22,44 @@ Email: tfox@elephantscale.com
 		- ex. `conda install -c conda-forge MYPACKAGENAME`
 
 
+# Python
+- General purpose, object-oriented, dynamic programming language
+- Python is also **language & environment** for data science computing and
+graphics
+- Open source
+- Rich ecosystem (lots of libraries)
+- Great for modeling, machine learning ,ad-hoc analytics
+- Used by developers, scientist, and data scientist
+
+
+#### Why Python
+- **Comprehensive**: can do a lot of analysis
+- **State-of-the-art graphics capabilities**
+- **Designed for interactive analysis**: no time consuming, supports scripting
+- **Open Source**: commercial packages costs $$$
+- Python can import from variety of formats (csv, excel, db)
+- Python is extensible: thousands of libraries in PyPi (open source)
+- Free IDEsL Spyder, Pycharm
+
+
+#### Python History
+- Created by Guido Von Rossom in 1991
+- Dynamically Typed Language: automatic type conversion
+- JIT (just in time): code compiles and runs in real time
+
+
+#### Python Use Cases
+- Web programming
+- Microservices
+- System Automation Tasks
+- Scientific Programming
+- Data Analysis / Data Science
+- ML / AI
+
+
+# Machine Learning Primer
+
+
 #### Advantages
 - Accurate: ML can learn from data, the more data it learns from the better it
 gets
@@ -52,7 +90,7 @@ best algorithm us very important
 	- Doesn't need a lot of compute power
 	- Mostly CPU bound
 	- Features needs to specified manually (by experts)
-	- Training usually takes seconds, mins, hours
+	- Training usually takes seconds, minutes, hours
 	- Easy to interpret
 - **Deep Learning**
 	- Need large amount of data for reasonable performance
@@ -80,7 +118,7 @@ algorithm, etc.
 	- Mode is "trained" with human labeled training data
 	- Model is testing on test data to see performance
 	- Model can be applied to unknown data
-	- Ex. Classification (spam or not), regression(stock market), decision trees(
+	- Ex. Classification (Spam or not), regression(stock market), decision trees(
 	fraud detection)
 	- Ex. Predicting the stock market = we have the data already, predict trends
 	- ***Model learns from (Training data)***
@@ -98,3 +136,34 @@ algorithm, etc.
 	data
 	- Ex. Large images archive only a few of them are labeled and a majority are
 	unlabeled
+
+
+# Scikit-Learn Intro
+- Provides a lot of algorithms
+
+
+#### Clustering
+- There are many different clustering algorithms for vectors
+- Simplist is k-means
+- K-means requires a known value of k (number of clusters) to start with
+
+
+#### K-Means Clustering
+- K-Means: Simplest Clustering Algorithm
+- **Step 1**: k numbers of points (centroids) are pre-seeded in the data
+- **Step 2**: Each point in the dataset is associated with its nearest centroid
+as determined by a distance measurement 
+- **Step 3**: The centroid (geometric center) of the clustered points
+becomes the new centroid of that cluster. Each centroid is updated
+- **Step 4**: Repeat steps 2 and 3 until convergence is reached (the points
+move less than the threshold amount)
+
+
+#### K-Means Clustering Summary
+- Easy to parallelize
+- **Disadvantages**:
+	- Values of k must be known in advance, which may mean running the exercise
+	many times to get good results
+	- Initial centroid positions are important; may cause long convergence
+	- Dense grouping of points are not especially considered (outliers = bad)
+	- Clusters not broadly (hyper)spherical don't work well for k-means
