@@ -6,6 +6,7 @@ Instructor: Tim Fox </br>
 Email: tfox@elephantscale.com
 
 - Using Anaconda to toggle and manage different environments for Python
+- Open Jupyter Notebook to run the labs
 
 
 #### How to Install Packages
@@ -167,3 +168,55 @@ move less than the threshold amount)
 	- Initial centroid positions are important; may cause long convergence
 	- Dense grouping of points are not especially considered (outliers = bad)
 	- Clusters not broadly (hyper)spherical don't work well for k-means
+
+
+#### Decision Trees
+- Has a long history and is an important algorithm in ML
+- Classics: Binary Tree (guessing game, customer support)
+- Modern variations: Random Forest, Boosted trees, Bagged Trees
+- Trees can be used for both classification and regression
+- Decision Trees are mostly used for classification
+- ***Advantages***
+	- Simple to understand and interpret
+	- Requires little data preparation
+	- Able to handle both numerical and categorical data
+	- Performs well with large datasets
+	- Easy to extract in order to move to another language
+- ***Disadvantages***
+	- Not as precise as linear or logistic regression
+	- Very sensitive to input data
+	- Tree may change significantly with a small change in data
+- ***Use Cases***
+	- Medical Diagnosis:
+		- Start from pattern of symptoms
+		- Define classes as clinical subtypes or conditions
+		- Result: patients with a condition who should receive different therapies
+	- Other Examples:
+		- Business planning
+		- Technical diagnostics
+		- Customer support
+
+
+#### Tree Pruning
+- Trees can grow arbitrarily large / deep
+- While they predict training set well, they may overfit !
+- So prune the tree
+	– Reduce overfitting
+	– Stable predictions, even if they are not most accurate – Make the tree simpler -> easier to understand
+- How to prune?
+	– Walk through each leaf node
+	– Evaluate the effect of removing it using hold-out test set
+	– Stop removing when no further improvements can be made
+- A 'sub tree' is chosen after pruning
+	– We can not consider every possible sub-tree.. Too many!
+	– Use a heuristic called 'minimize alpha / tuning parameter'
+
+
+#### Data Bagging
+-  Say, we have only one set of data, but we want many sets
+– Let us randomly select a subset which is called our training data set
+– Return the elements back into the main set then, Repeat!
+– One element may be picked multiple times
+– This is called **“Bootstrapping”** (Sampling With Replacement)
+- Thus, we generate many set of data for training
+- This process is called **“data bagging”**
