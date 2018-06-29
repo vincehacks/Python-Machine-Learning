@@ -153,7 +153,7 @@ algorithm, etc.
 - K-Means: Simplest Clustering Algorithm
 - **Step 1**: k numbers of points (centroids) are pre-seeded in the data
 - **Step 2**: Each point in the dataset is associated with its nearest centroid
-as determined by a distance measurement 
+as determined by a distance measurement
 - **Step 3**: The centroid (geometric center) of the clustered points
 becomes the new centroid of that cluster. Each centroid is updated
 - **Step 4**: Repeat steps 2 and 3 until convergence is reached (the points
@@ -202,7 +202,8 @@ move less than the threshold amount)
 - While they predict training set well, they may overfit !
 - So prune the tree
 	– Reduce overfitting
-	– Stable predictions, even if they are not most accurate – Make the tree simpler -> easier to understand
+	– Stable predictions, even if they are not most accurate – Make the tree
+  simpler -> easier to understand
 - How to prune?
 	– Walk through each leaf node
 	– Evaluate the effect of removing it using hold-out test set
